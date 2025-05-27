@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.product-container{
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 16px;
+    font-size: 12px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.product img{
+    width: 150px;
+}
+
+.product-detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.product-brand{
+    width: 100%;
+}
+
+.product-detail div{
+    font-weight: 600;
+}
+
+.pagination{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    align-items: center;
+}
+
+.pagination span{
+    padding: 8px;
+    cursor: pointer;
+}
+
+.pagination button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+}
+
+.active{
+    font-weight: 700;
+    font-size: 16px;
+}
